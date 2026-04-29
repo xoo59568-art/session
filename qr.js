@@ -57,33 +57,12 @@ router.get('/', async (req, res) => {
                                         let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                                         await delay(800);
                                    let b64data = Buffer.from(data).toString('base64');
-                                   let session = await Qr_Code_By_Mbuvi_Tech.sendMessage(Qr_Code_By_Mbuvi_Tech.user.id, { text: 'JUNE-MD:~' + b64data });
+                                   let session = await Qr_Code_By_Mbuvi_Tech.sendMessage(Qr_Code_By_Mbuvi_Tech.user.id, { text: 'DAVE-X:~' + b64data });
         
                                    let MBUVI_MD_TEXT = `
 ╔════════════════════◇
 ║『 SESSION CONNECTED』
-║ ❍JUNE X BOT
-║ ❍supreme
-╚════════════════════╝
-
-
----
-
-╔════════════════════◇
-║『 YOU'VE CHOSEN JUNE X BOT 』
-║  Set the session ID in Heroku:
-║  SESSION_ID: 
-╚════════════════════╝
-╔════════════════════◇
-║ 『••• _V𝗶𝘀𝗶𝘁 𝗙𝗼𝗿_H𝗲𝗹𝗽 •••』
-║❍ 𝐘𝐨𝐮𝐭𝐮𝐛𝐞: youtube.com/@giddynokia
-║❍ 𝐎𝐰𝐧𝐞𝐫: t.me/supremLord
-║❍ 𝐑𝐞𝐩𝐨: https://github.com/vinpink2/JUNE-X
-║❍ 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦:
-║ ☬ ☬ ☬ ☬
-╚═════════════════════╝
-𒂀 Enjoy JUNE X BOT
-
+║ ❍Dave Tech
 
 Don't Forget To Give Star⭐ To My Repo
 ______________________________`;
